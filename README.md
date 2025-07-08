@@ -170,10 +170,14 @@ Notifications Compatibility
 ## ⚒️ How It Works
 
 1. Player types `/roll (1/2)` to roll 1 or 2 dice. (Can Be Disabled if using Inventory item. Config for Disabling Command Below)
+
+Set this in `config.lua`:
 ```lua
 RollDice.UseCommand = false
 ```
 2. Player uses the dice item to roll 2 dice. (Can Be Disabled if using Command. Config for Disabling Inventory item Below)
+
+Set this in `config.lua`:
 ```lua
 RollDice.InventorySystem = "none"
 ```
