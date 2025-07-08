@@ -30,7 +30,7 @@ AddEventHandler("RollDice:Client:Show", function(sourceId, rolls)
         -- Play the dice roll animation
         PlayRollAnim(srcPed)
         -- If debugging, notify that we are waiting for the animation to finish
-        if RollDice.Debug then print("[RollDice DEBUG] Waiting 2 seconds for animation to finish...") end
+        if RollDice.Debug then print("[RollDice DEBUG] Waiting a few seconds for animation to finish...") end
         -- Wait for x seconds (adjust this in config to match animation duration)
         Wait(RollDice.AnimWaitTime)
     end

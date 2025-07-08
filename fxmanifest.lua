@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Behr'
 description 'RollDice Script by Behr - https://github.com/BehrTheDon/BehrDice'
-version '1.0.1'
+version '1.0.2'
 
 client_scripts {
     'config.lua',

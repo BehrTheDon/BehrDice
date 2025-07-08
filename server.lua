@@ -1,5 +1,5 @@
 -- Define the current version of the script
-RollDice.Version = "1.0.1"
+RollDice.Version = "1.0.2"
 
 -- Table to track cooldowns for each player using the dice item
 local lastDiceUse = {}
@@ -80,9 +80,14 @@ if RollDice.InventorySystem ~= "none" then
 
             lastDiceUse[source] = now
 
+            -- Clamp dice count between 1 and MaxDice to prevent issues
+            local diceCount = math.max(1, math.min(RollDice.ItemDiceCount, RollDice.MaxDice))
+
             -- Generate dice results
             local rolls = {}
-            for i = 1, RollDice.MaxDice do table.insert(rolls, math.random(1, 6)) end
+            for i = 1, diceCount do
+                table.insert(rolls, math.random(1, 6))
+            end
 
             if RollDice.Debug then
                 print(("^2[RollDice]^7 [QS] Player [%s] used item '%s' and rolled: %s")
@@ -122,13 +127,21 @@ if RollDice.InventorySystem ~= "none" then
 
             lastDiceUse[source] = now
 
-            local rolls = {}
-            for i = 1, RollDice.MaxDice do table.insert(rolls, math.random(1, 6)) end
+            -- Clamp dice count between 1 and MaxDice to prevent issues
+            local diceCount = math.max(1, math.min(RollDice.ItemDiceCount, RollDice.MaxDice))
 
-            if RollDice.Debug then
-                print(("^2[RollDice]^7 [OX] Player [%s] used item '%s' and rolled: %s"):format(source, RollDice.ItemName, table.concat(rolls, ", ")))
+            -- Generate dice results
+            local rolls = {}
+            for i = 1, diceCount do
+                table.insert(rolls, math.random(1, 6))
             end
 
+            if RollDice.Debug then
+                print(("^2[RollDice]^7 [QS] Player [%s] used item '%s' and rolled: %s")
+                    :format(source, RollDice.ItemName, table.concat(rolls, ", ")))
+            end
+
+            -- Show results to all players
             TriggerClientEvent("RollDice:Client:Show", -1, source, rolls)
         end)
 
@@ -164,13 +177,21 @@ if RollDice.InventorySystem ~= "none" then
 
             lastDiceUse[source] = now
 
-            local rolls = {}
-            for i = 1, RollDice.MaxDice do table.insert(rolls, math.random(1, 6)) end
+            -- Clamp dice count between 1 and MaxDice to prevent issues
+            local diceCount = math.max(1, math.min(RollDice.ItemDiceCount, RollDice.MaxDice))
 
-            if RollDice.Debug then
-                print(("^2[RollDice]^7 [QB] Player [%s] used item '%s' and rolled: %s"):format(source, RollDice.ItemName, table.concat(rolls, ", ")))
+            -- Generate dice results
+            local rolls = {}
+            for i = 1, diceCount do
+                table.insert(rolls, math.random(1, 6))
             end
 
+            if RollDice.Debug then
+                print(("^2[RollDice]^7 [QS] Player [%s] used item '%s' and rolled: %s")
+                    :format(source, RollDice.ItemName, table.concat(rolls, ", ")))
+            end
+
+            -- Show results to all players
             TriggerClientEvent("RollDice:Client:Show", -1, source, rolls)
         end)
 

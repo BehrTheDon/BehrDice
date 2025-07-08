@@ -20,7 +20,10 @@ RollDice.ItemCooldown = 7 -- players must wait 7 seconds before rolling again (D
 RollDice.NotificationType = "ox" --  "ox" for ox_lib Notify, "qb" for QBCore Notify, or "chat" for chat message (Dice Item ONLY/Command does NOT have cooldown notification)
 
 -- The maximum number of dice a player can roll at once
-RollDice.MaxDice = 2 -- (Command ONLY/Dice Item Automatically rolls 2 dice)
+RollDice.MaxDice = 2 -- (Command ONLY)
+
+-- The number of dice that will roll when using the item from inventory
+RollDice.ItemDiceCount = 2 -- (Dice Item ONLY)
 
 -- How long (in milliseconds) the dice results will be shown on screen (5000ms = 5 seconds)
 RollDice.ShowTime = 5000

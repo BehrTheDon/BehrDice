@@ -136,7 +136,22 @@ Notifications Compatibility
 
 6. **Optional: Add Dice Item to Inventory System**
 
-    Example for QS/QB-Inventory:
+    Example for QS-Inventory:
+    ```lua
+    ['dice'] = {
+        ['name'] = "dice",
+        ['label'] = "Dice",
+        ['weight'] = 100,
+        ['type'] = "item",
+        ['image'] = "dice.png",
+        ['unique'] = false,
+        ['useable'] = true,
+        ['shouldClose'] = true,
+        ['combinable'] = nil,
+        ['description'] = "Shake and roll the dice!"
+    },
+    ```
+    Example for QB-Inventory:
     ```lua
     ["dice"] = {
         name = "dice",
