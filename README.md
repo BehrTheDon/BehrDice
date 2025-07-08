@@ -55,7 +55,7 @@ Notifications Compatibility
 | Default Chat Message     | ✅       | ✅       | ✅         |
 | Custom Notify Support    | ✅       | ✅       | Unknown     |
 
-    I will update the compatibility matix once I have tested this script with any that have a ❓.
+    I will update the compatibility matix once I have tested this script with any that have a ❓.  
     Everything is completely open-source, Edit and add your own inventory and notification scripts!
 
 ---
@@ -77,10 +77,10 @@ Notifications Compatibility
 
 4. **Change Dice Textures**
 
-    Default dice pictures are provided, but here is how to add your own images.
-    Place your custom `dice1.png` through `dice6.png` in `stream/roll_dice.ytd`.  
-    You can use OpenIV or Texture Toolkit to pack these PNGs into `roll_dice.ytd`.
-    Check the `BehrDice/stream` folder for the default PNGs and YTD
+    - Default dice pictures are provided, but here is how to add your own images.  
+    - Place your custom `dice1.png` through `dice6.png` in `stream/roll_dice.ytd`.  
+    - You can use OpenIV or Texture Toolkit to pack these PNGs into `roll_dice.ytd`.  
+    - Check the `BehrDice/stream` folder for the default PNGs and YTD  
 
 5. **Configure Framework & Inventory**
 
