@@ -48,8 +48,8 @@ Notifications Compatibility
 | Chat Message (optional)  | ✅       | ✅       | ✅         |
 | Custom Notify Support    | ✅       | ✅       | Unknown     |
 
-I will update the compatibility matix once I have tested this script with any that have a ❓.
-Everything is completely open-source, Edit and add your own inventory and notification scripts!
+    I will update the compatibility matix once I have tested this script with any that have a ❓.
+    Everything is completely open-source, Edit and add your own inventory and notification scripts!
 
 ---
 
@@ -68,10 +68,12 @@ Everything is completely open-source, Edit and add your own inventory and notifi
     ensure BehrDice
     ```
 
-4. **Provide Dice Textures**
+4. **Change Dice Textures**
 
+    Default dice pictures are provided, but here is how to add your own images.
     Place your custom `dice1.png` through `dice6.png` in `stream/roll_dice.ytd`.  
-    You can use OpenIV or Texture Toolkit to pack these PNGs into a `.ytd`.
+    You can use OpenIV or Texture Toolkit to pack these PNGs into `roll_dice.ytd`.
+    Check the `BehrDice/stream` folder for the default PNGs and YTD
 
 5. **Configure Framework & Inventory**
 
@@ -166,8 +168,15 @@ Everything is completely open-source, Edit and add your own inventory and notifi
 
 ## ⚒️ How It Works
 
-1. Player types `/roll (1/2)` to roll 1 or 2 dice.(Can Be Disabled if using Inventory item. ex.RollDice.UseCommand = false)
-2. Player uses the dice item to roll 2 dice. (Can Be Disabled if using Command. ex. RollDice.InventorySystem = "none")
+1. Player types `/roll (1/2)` to roll 1 or 2 dice.
+(Can Be Disabled if using Inventory item.)
+```lua
+RollDice.UseCommand = false
+```
+2. Player uses the dice item to roll 2 dice. (Can Be Disabled if using Command.)
+```lua
+RollDice.InventorySystem = "none"
+```
 3. A roll animation plays on their ped.
 4. Nearby players see 2D dice sprites float above the player’s head.
 5. The number rolled appears as a sprite using `DrawSprite()` with `roll_dice.ytd`.
