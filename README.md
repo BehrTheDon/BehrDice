@@ -1,7 +1,7 @@
 # BehrDice
 # 🎲 FiveM Dice Roll Script — Immersive Visual Dice for RP Servers
 
-A standalone-compatible, plug-and-play dice rolling system for FiveM with realistic animations, floating 2D dice face sprites, and optional inventory integration. Perfect for RP gambling, DnD, or immersive minigames — all while keeping it highly configurable and framework-flexible.
+A standalone-compatible, plug-and-play dice rolling system for FiveM with realistic animations, floating 2D dice face sprites, and optional inventory integration. Perfect for Shooting dice with your homies — all while keeping it highly configurable and framework-flexible.
 
 ![Preview](https://i.imgur.com/YOUR-GIF-HERE.gif) <!-- Replace with your GIF/video thumbnail -->
 
@@ -45,7 +45,7 @@ Inventory Compatibility
 Notifications Compatibility
 | ob_lib (optional)        | ✅       | ✅       | Unknown     |
 | QBCoreNotify (optional)  | ❓       | ❓       | Unknown     |
-| Chat Message (optional)  | ✅       | ✅       | ✅         |
+| Default Chat Message     | ✅       | ✅       | ✅         |
 | Custom Notify Support    | ✅       | ✅       | Unknown     |
 
     I will update the compatibility matix once I have tested this script with any that have a ❓.
@@ -157,6 +157,7 @@ Notifications Compatibility
         }
     },
     ```
+    Dice inventory image is provided for you inside the `BehrDice/install first/images` folder.
 
 ---
 
@@ -168,13 +169,11 @@ Notifications Compatibility
 
 ## ⚒️ How It Works
 
-1. Player types `/roll (1/2)` to roll 1 or 2 dice.
-    (Can Be Disabled if using Inventory item. Config for Disableing Command Below)
+1. Player types `/roll (1/2)` to roll 1 or 2 dice. (Can Be Disabled if using Inventory item. Config for Disabling Command Below)
 ```lua
 RollDice.UseCommand = false
 ```
-2. Player uses the dice item to roll 2 dice. 
-    (Can Be Disabled if using Command. Config for Disableing Command Below)
+2. Player uses the dice item to roll 2 dice. (Can Be Disabled if using Command. Config for Disabling Command Below)
 ```lua
 RollDice.InventorySystem = "none"
 ```
