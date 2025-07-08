@@ -173,7 +173,7 @@ Notifications Compatibility
 ```lua
 RollDice.UseCommand = false
 ```
-2. Player uses the dice item to roll 2 dice. (Can Be Disabled if using Command. Config for Disabling Command Below)
+2. Player uses the dice item to roll 2 dice. (Can Be Disabled if using Command. Config for Disabling Inventory item Below)
 ```lua
 RollDice.InventorySystem = "none"
 ```
