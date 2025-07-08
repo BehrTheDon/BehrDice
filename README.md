@@ -1,0 +1,2 @@
+# BehrDice
+FiveM dice script
