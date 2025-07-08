@@ -27,7 +27,7 @@ A standalone-compatible, plug-and-play dice rolling system for FiveM with realis
 |--------------------------|-----------|-----------------------------------------------------------------------|
 | Any Framework            | ✅       | Works with ESX, QBCore, or none (standalone)                          |
 | ob_lib (optional)        | 🔁       | Optional ox_lib Notifications if using Dice Item for cooldowns        |
-| Inventory Compatibility  | ⚠️       | Ox, Quasar, and QB Inventorys Supported for Dice Item                 |
+| Inventory (optional)     | ⚠️       | Ox, Quasar, and QB Inventorys Supported for Dice Item                 |
 
 ---
 
@@ -39,15 +39,16 @@ A standalone-compatible, plug-and-play dice rolling system for FiveM with realis
 | `/roll` Chat Command     | ✅       | ✅       | ✅         |
 Inventory Compatibility
 | QS-Inventory Support     | ✅       | ✅       | Unknown     |
-| OX-Inventory Support     | ✅       | ✅       | Unknown     | Untested, will Updaed when Confirmed
-| QB-Inventory Support     | ❌       | ✅       | Unknown     | Untested, will Updaed when Confirmed
+| OX-Inventory Support     | ❓       | ❓       | Unknown     |
+| QB-Inventory Support     | ❓       | ❓       | Unknown     |
 | Custom Inventory Support | ✅       | ✅       | Unknown     |
 Notifications Compatibility
 | ob_lib (optional)        | ✅       | ✅       | Unknown     |
-| QBCoreNotify (optional)  | ❌       | ✅       | Unknown     |  Untested, will Updaed when Confirmed
+| QBCoreNotify (optional)  | ❓       | ❓       | Unknown     |
 | Chat Message (optional)  | ✅       | ✅       | ✅         |
 | Custom Notify Support    | ✅       | ✅       | Unknown     |
 
+I will update the compatibility matix once I have tested this script with any that have a ❓.
 Everything is completely open-source, Edit and add your own inventory and notification scripts!
 
 ---
