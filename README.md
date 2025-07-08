@@ -21,6 +21,12 @@ A standalone-compatible, plug-and-play dice rolling system for FiveM with realis
 
 ---
 
+## 🎥 Showcase
+
+> Coming soon!
+
+---
+
 ## 🧰 Requirements
 
 | Dependency               | Required  | Description                                                           |
@@ -158,12 +164,6 @@ Notifications Compatibility
     },
     ```
     Dice inventory image is provided for you inside the `BehrDice/install first/images` folder.
-
----
-
-## 🎥 Showcase
-
-> Coming soon!
 
 ---
 
