@@ -9,7 +9,8 @@ A standalone-compatible, plug-and-play dice rolling system for FiveM with realis
 
 ## 📌 Features
 
-- 🎲 Supports 1 or 2 dice rolls (`/roll`, or use item)
+- 🎲 Supports 1 or 2 dice rolls with `/roll`
+- 🎲 Supports 2 dice rolls with Dice Item
 - 🧍‍♂️ Animation plays for the player rolling the dice
 - 🌐 Others nearby see floating dice face images above the player's head
 - 🎨 Includes customizable dice face textures (1–6)
