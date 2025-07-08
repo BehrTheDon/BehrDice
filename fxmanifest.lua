@@ -1,7 +1,9 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'RollDice Script by Behr - https://github.com/your-username/your-repo'
+author 'Behr'
+description 'RollDice Script by Behr - https://github.com/BehrTheDon/BehrDice'
+version '1.0.1'
 
 client_scripts {
     'config.lua',

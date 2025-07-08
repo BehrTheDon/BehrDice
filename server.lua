@@ -1,5 +1,5 @@
 -- Define the current version of the script
-RollDice.Version = "1.0.0"
+RollDice.Version = "1.0.1"
 
 -- Table to track cooldowns for each player using the dice item
 local lastDiceUse = {}
@@ -186,30 +186,37 @@ else
     end
 end
 
--- VERSION CHECK (GitHub)
-CreateThread(function()
-    local currentVersion = RollDice.Version
-    -- Link to version file on GitHub (change to your own repo)
-    local repoURL = "https://raw.githubusercontent.com/your-username/your-repo/main/version.txt"
 
-    -- Request the file from GitHub
-    PerformHttpRequest(repoURL, function(code, latestVersion, headers)
-        -- If successful
-        if code == 200 and latestVersion then
-            latestVersion = latestVersion:gsub("%s+", "") -- Trim whitespace
+if RollDice.CheckForUpdates then
+    -- VERSION CHECK (GitHub)
+    CreateThread(function()
+        local currentVersion = RollDice.Version
+        -- Link to version file on GitHub (change to your own repo)
+        local repoURL = "https://raw.githubusercontent.com/BehrTheDon/BehrDice/main/version.txt"
 
-            -- Compare versions
-            if latestVersion ~= currentVersion then
-                -- New version found
-                print("^3[BehrDice]^7 Update available! Current version: ^1" .. currentVersion .. "^7, Latest: ^2" .. latestVersion)
-                print("^3[BehrDice]^7 Download the latest version at: ^5https://github.com/your-username/your-repo")
+        -- Request the file from GitHub
+        PerformHttpRequest(repoURL, function(code, latestVersion, headers)
+            -- If successful
+            if code == 200 and latestVersion then
+                latestVersion = latestVersion:gsub("%s+", "") -- Trim whitespace
+
+                -- Compare versions
+                if latestVersion ~= currentVersion then
+                    -- New version found
+                    print("^3[BehrDice]^7 Update available! Current version: ^1" .. currentVersion .. "^7, Latest: ^2" .. latestVersion)
+                    print("^3[BehrDice]^7 Download the latest version at: ^5https://github.com/BehrTheDon/BehrDice")
+                else
+                    -- Already latest
+                    print("^2[BehrDice]^7 You are running the latest version: " .. currentVersion .. "^2 Thanks for using Behr Dice!")
+                end
             else
-                -- Already latest
-                print("^2[BehrDice]^7 You are running the latest version: " .. currentVersion)
+                -- Request failed
+                print("^1[BehrDice]^7 Version check failed. Could not reach GitHub.")
             end
-        else
-            -- Request failed
-            print("^1[BehrDice]^7 Version check failed. Could not reach GitHub.")
-        end
+        end)
     end)
-end)
+else
+    if RollDice.Debug then
+        print("^3[BehrDice]^7 Version checker is disabled via config.")
+    end
+end

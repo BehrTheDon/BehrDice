@@ -41,5 +41,5 @@ RollDice.RollAnim = "anim@mp_player_intcelebrationmale@wank"
 RollDice.RollAnimName = "wank"
 
 -- For Developers
--- Toggle debug mode (true = show debug logs in console, false = silent mode)
-RollDice.Debug = false
+RollDice.Debug = false -- Toggle debug mode (true = show debug logs in console, false = silent mode)
+RollDice.CheckForUpdates = true -- Set to false to disable version checker
