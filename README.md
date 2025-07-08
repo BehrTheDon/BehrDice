@@ -90,17 +90,29 @@ Notifications Compatibility
     -- Create a table called RollDice to hold all our configuration options
     RollDice = {}
 
+
+
+    -- COMMAND OPTIONS
     -- The command players will type in chat to roll dice (e.g., /roll)
     RollDice.ChatCommand = "roll"
 
     -- Toggle to enable or disable the /roll command (toggle chat command no matter the command name)
     RollDice.UseCommand = true
 
+    -- The maximum number of dice a player can roll at once
+    RollDice.MaxDice = 2 -- (Command ONLY)
+
+
+
+    -- DICE AS ITEM OPTIONS
+    -- Choose the inventory system: Creates the Useable Item in with your inventory script
+    RollDice.InventorySystem = "qs" -- Options: "qs" for qs-inventory, "ox" for ox-inventory, or "qb" for qb-inventory, Use "none" to disable item-based dice
+
     -- Name of the item that triggers the dice roll
     RollDice.ItemName = "dice" -- You can rename this item
 
-    -- Choose the inventory system: "qs", "ox", "qb", or "none"
-    RollDice.InventorySystem = "qs" -- Options: "qs" for qs-inventory, "ox" for ox-inventory, or "qb" for qb-inventory, Use "none" to disable item-based dice
+    -- The number of dice that will roll when using the item from inventory
+    RollDice.ItemDiceCount = 2 -- (Dice Item ONLY)
 
     -- Cooldown time in seconds between using the dice item
     RollDice.ItemCooldown = 7 -- players must wait 7 seconds before rolling again (Dice Item ONLY/Command does NOT have cooldown)
@@ -108,12 +120,9 @@ Notifications Compatibility
     -- Notification type for Cooldown time for dice item
     RollDice.NotificationType = "ox" --  "ox" for ox_lib Notify, "qb" for QBCore Notify, or "chat" for chat message (Dice Item ONLY/Command does NOT have cooldown notification)
 
-    -- The maximum number of dice a player can roll at once
-    RollDice.MaxDice = 2 -- (Command ONLY)
 
-    -- The number of dice that will roll when using the item from inventory
-    RollDice.ItemDiceCount = 2 -- (Dice Item ONLY)
 
+    -- UNIVERSAL OPTIONS
     -- How long (in milliseconds) the dice results will be shown on screen (5000ms = 5 seconds)
     RollDice.ShowTime = 5000
 
