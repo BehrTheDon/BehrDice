@@ -10,7 +10,7 @@ A standalone-compatible, plug-and-play dice rolling system for FiveM with realis
 ## 📌 Features
 
 - 🎲 Supports 1 or 2 dice rolls with `/roll`
-- 🎲 Supports 2 dice rolls with Dice Item
+- 🎲 Supports 1 or 2 dice rolls with Dice Item (Choose In Config)
 - 🧍‍♂️ Animation plays for the player rolling the dice
 - 🌐 Others nearby see floating dice face images above the player's head
 - 🎨 Includes customizable dice face textures (1–6)
@@ -199,13 +199,13 @@ Notifications Compatibility
 
 ## ⚒️ How It Works
 
-1. Player types `/roll (1/2)` to roll 1 or 2 dice. (Can Be Disabled if using Inventory item.)
+1. Player types `/roll (1/2)` to roll 1 or 2 dice. (Can Be Disabled if using Inventory item.)  
 
 Set this in `config.lua` to disable the dice command:
 ```lua
 RollDice.UseCommand = false
 ```
-2. Player uses the dice item to roll 2 dice. (Can Be Disabled if using Command.)
+2. Player uses the dice item to roll 1 or 2 dice. Choose 1 or 2 in the config. (Can Be Disabled if using Command.)  
 
 Set this in `config.lua` to disable the dice inventory items:
 ```lua
