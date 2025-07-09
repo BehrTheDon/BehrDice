@@ -1,5 +1,5 @@
 -- Define the current version of the script
-RollDice.Version = "1.0.2"
+RollDice.Version = "1.0.3"
 
 -- Table to track cooldowns for each player using the dice item
 local lastDiceUse = {}
