@@ -55,8 +55,7 @@ Notifications Compatibility
 | Default Chat Message     | ✅       | ✅       | ✅       |
 | Custom Notify Support    | ✅       | ✅       | ❌       |
 
-- I do not have a QBCore server so if anyone is willing to test and let me know the results  
-and I will update QBCore information.  
+- I do not have a QBCore server so if anyone is willing to test and let me know the results and I will update QBCore information.  
 - I will update the compatibility matix once I have tested this script with any that have a ❓.  
 - Everything is completely open-source and commented, Edit and add your own inventory and notification scripts!
 
