@@ -225,6 +225,16 @@ RollDice.InventorySystem = "none"
 
 ---
 
+## 🔄 Version Checker
+
+Set this in `config.lua` to enable or disable automatic version checks:
+```lua
+RollDice.CheckForUpdates = true -- Set to false to disable version checker
+```
+When enabled, the script will ping the GitHub repository on resource start and notify you in the server console if an update is available.
+
+---
+
 ## 🔍 Debugging
 
 Set this in `config.lua`:
