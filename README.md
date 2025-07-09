@@ -70,7 +70,7 @@ Notifications Compatibility
     ```
 
 2. **Drag `BehrDice` Into Your `resources` Folder.**  
-**if the file is named BehrDice-main, rename it to BehrDice**
+**If the file is named BehrDice-main, rename it to BehrDice**
 
 3. **Add to `server.cfg`**
     ```ini
