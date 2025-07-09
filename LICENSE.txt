@@ -1,0 +1,95 @@
+BehrDice Script License Agreement
+
+Version 1 – Effective July 2025
+Copyright (c) 2025 BehrTheDon
+
+⸻
+
+What You’re Allowed to Do
+
+You are granted permission to use this script freely, under the following conditions:
+    •    You can use the script on your own FiveM server(s) — whether public, private, whitelisted, or in development.
+    •    You can modify the code to suit your server’s needs — including animations, features, visuals, etc.
+    •    You can share the script privately with your dev team or staff members.
+    •    You can share modified versions publicly (e.g., on GitHub, forums, Discord), as long as:
+    •    You give visible credit to the original author(s).
+    •    You link back to the original script or release (e.g., GitHub page).
+
+⸻
+
+What You’re NOT Allowed to Do
+
+The following actions are strictly prohibited:
+    •    You may not sell or resell this script in any form — original or modified.
+    •    You may not include this script in paid server packages, Tebex stores, Fiverr commissions, or any monetized bundles.
+    •    You may not post or distribute this script on leak/crack/pirate sites.
+    •    You may not offer it behind a donation/paywall.
+    •    You may not remove or alter this license file or embedded author credits (if present).
+
+⸻
+
+Modifying the Script
+
+You’re encouraged to customize the script to your needs:
+    •    Change how it works, looks, or integrates with other scripts.
+    •    Expand features, simplify it, or completely overhaul it.
+    •    If you release your modified version publicly, you must:
+    •    Give proper credit to the original author.
+    •    Include a direct link to the original script’s source page.
+
+⸻
+
+No Resale – No Exceptions
+
+To be crystal clear:
+
+You are not allowed to sell this script, its components, or any modified version of it for any kind of payment, donation, subscription, or compensation.
+
+This includes:
+    •    Including it in server installs for sale
+    •    Locking it behind paywalls or Nitro boosts
+    •    Offering it as “custom work” if any part of this script is involved
+
+If you do this, you’re violating the license — and we will file takedowns, blacklist you from communities, and pursue DMCA enforcement if needed.
+
+⸻
+
+Support & Responsibility
+
+This script is provided as-is with no guarantees or warranties.
+    •    You use this at your own risk.
+    •    The original author is not responsible for server errors, script bugs, or compatibility issues that may occur.
+    •    Support is not guaranteed, but constructive feedback is welcome.
+
+⸻
+
+Attribution Requirements
+
+If you share a modified version publicly:
+    •    You must include clear credit to the original author(s).
+    •    You must provide a working link to the original script.
+
+This helps others find the original source and shows respect for open-source work.
+
+⸻
+
+Keep This License File
+
+Do not delete or modify this license file. Keep it included in the script folder when redistributing or uploading the resource.
+
+⸻
+
+Contact
+
+For feedback, issues, or license violation reports, contact:
+
+Contact: Discord - BehrTheDon | Github - BehrTheDon
+
+⸻
+
+TL;DR (Too Long; Didn’t Read)
+    •    Use and modify the script for your own server
+    •    Share modified versions if you give credit and link back
+    •    Never sell it in any form
+    •    Always include this license when redistributing
+    •    Don’t be a dick — respect the work, respect the license
